@@ -281,7 +281,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 129 224 275 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>207 180 640 405 0 0 1792 1097 </string>
+	<string>483 171 640 391 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1661,7 +1661,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>134E51A6-DA5B-48D7-83D6-04BADB391C6E</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>4</integer>
+	<integer>6</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2432,7 +2432,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/akshath/Documents/development/dotfiles/iterm</string>
+	<string>/Users/akshath/Documents/development/dotfiles/iterm2</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2480,6 +2480,8 @@
 	<false/>
 	<key>SuppressRestartAnnouncement</key>
 	<true/>
+	<key>TabStyleWithAutomaticOption</key>
+	<integer>5</integer>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WindowNumber</key>
