@@ -6,9 +6,9 @@
 
 
 # Step 0)
-# Install oh-my-zsh
-# printf "Installing oh-my-zsh\n"
-# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+Install oh-my-zsh
+printf "Installing oh-my-zsh\n"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
 
