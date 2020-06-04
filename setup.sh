@@ -51,3 +51,10 @@ brew cask install iterm2
 # Specify iIterm2 to get its preferences from this directory
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string ${pwd}/iterm2
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+
+
+# Step 6)
+# Install fasd
+printf "\nIntalling FASD\n"
+brew install fasd
