@@ -25,7 +25,7 @@ done
 
 # Step 2)
 # Clone and symlink the spaceship theme for zsh
-printf "\nInstalling zsh themes"
+printf "\nInstalling zsh themes\n"
 rm -rf ${ZSH}/custom/themes/spaceship-prompt
 rm -f ${ZSH}/custom/themes/spaceship.zsh-theme
 git clone https://github.com/denysdovhan/spaceship-prompt.git ${ZSH}/custom/themes/spaceship-prompt
@@ -33,28 +33,36 @@ ln -s ${ZSH}/custom/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH}/custom/th
 
 
 
-# Step 3)
+# Step 3
+# Install zsh-autosuggestions
+printf "\nInstalling zsh-autosuggestions\n"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+
+
+
+# Step 4)
 # Install Homebrew
 printf "\nInstalling Homebrew\n"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 
 
-# Step 4)
+# Step 5)
 # Install iTerm2
 printf "\nInstalling iTerm2\n"
 brew cask install iterm2
 
 
 
-# Step 5)
+# Step 6)
 # Specify iIterm2 to get its preferences from this directory
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string ${pwd}/iterm2
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 
 
-# Step 6)
+# Step 7)
 # Install fasd
 printf "\nIntalling FASD\n"
 brew install fasd
