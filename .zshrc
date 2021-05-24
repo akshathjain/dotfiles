@@ -7,6 +7,7 @@ PATH=~/Library/cc0/bin:~/Library/flutter/bin:$PATH:~/Library/Android/sdk/platfor
 PATH=$PATH:/Applications/MATLAB_R2019a.app/bin
 PATH=$PATH:/usr/local/smlnj/bin
 PATH=$PATH:/Applications/COLMAP.app/Contents/MacOS/
+# PATH=$PATH:"/Applications/Python 3.6/IDLE.app/Contents/MacOS/"
 
 #matlab alias for no desktop
 alias matlab='matlab -nodesktop -nosplash'
@@ -19,8 +20,9 @@ alias py='pypy3'
 #ssh alias
 alias shark='ssh arjain@carpetshark.ics.cs.cmu.edu' # 8 logical cores
 alias andrew='ssh arjain@unix8.andrew.cmu.edu' # 40 logical cores
+alias pi='ssh pi@raspberrypi.local'
 
-
+#alias pi='ping pi.local -c 1 | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" | head -1 | xargs -I {} ssh -tt pi@{}' # ping to find IP address, grep to extract in format #.#.#.#, get first line only, pass into ssh command (-t to fix stdin issue)
 
 
 
@@ -125,3 +127,26 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# opam configuration
+test -r /Users/akshath/.opam/opam-init/init.zsh && . /Users/akshath/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+export PATH="/usr/local/sbin:$PATH"
+
+# kaggle credentials
+export KAGGLE_USERNAME=akshathjain
+export KAGGLE_KEY=56e9f4cbb4055a3dfd2084516c5477b8
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
