@@ -20,6 +20,8 @@ alias py='pypy3'
 #ssh alias
 alias shark='ssh arjain@carpetshark.ics.cs.cmu.edu' # 8 logical cores
 alias andrew='ssh arjain@unix8.andrew.cmu.edu' # 40 logical cores
+alias andrewX="export DISPLAY=:0 && ssh -X -o 'ForwardX11Timeout 240m' arjain@unix8.andrew.cmu.edu"
+alias linux='ssh arjain@linux22.andrew.cmu.edu'
 alias pi='ssh pi@raspberrypi.local'
 
 #alias pi='ping pi.local -c 1 | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" | head -1 | xargs -I {} ssh -tt pi@{}' # ping to find IP address, grep to extract in format #.#.#.#, get first line only, pass into ssh command (-t to fix stdin issue)
