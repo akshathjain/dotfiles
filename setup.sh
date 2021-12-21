@@ -54,7 +54,7 @@ printf "\nInstalling Homebrew\n"
 # Step 5)
 # Install iTerm2
 printf "\nInstalling iTerm2\n"
-brew cask install iterm2
+brew install --cask iterm2
 
 
 
